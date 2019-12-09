@@ -128,12 +128,12 @@ class ChewieState extends State<Chewie> {
     );
 
     SystemChrome.setEnabledSystemUIOverlays([]);
-    if (isAndroid) {
-      SystemChrome.setPreferredOrientations([
-        DeviceOrientation.landscapeLeft,
-        DeviceOrientation.landscapeRight,
-      ]);
-    }
+    // if (isAndroid) {
+    //   SystemChrome.setPreferredOrientations([
+    //     DeviceOrientation.landscapeLeft,
+    //     DeviceOrientation.landscapeRight,
+    //   ]);
+    // }
 
     if (!widget.controller.allowedScreenSleep) {
       Wakelock.enable();
